@@ -3,6 +3,7 @@ export interface IUser {
   name: string;
   totalContributions: number;
   userImage: string;
+  bio: string | null;
   isAllowed: boolean;
   createdAt: Date;
 }

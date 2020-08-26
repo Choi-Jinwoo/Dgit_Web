@@ -1,6 +1,8 @@
 import React from 'react';
-import RankUser from './Rank/RankUserItem/RankUserItem';
 import RankPage from '../pages/RankPage';
+
+import '../style/common.scss';
+
 
 const App = () => {
   return (
