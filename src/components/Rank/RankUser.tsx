@@ -11,14 +11,17 @@ const RankUser = (props: IRankUserProps) => {
   return (
     <div className="rankUser">
       <table>
-        <tr>
+        <thead>
           <th>순위</th>
           <th>프로필</th>
           <th>이름</th>
           <th>아이디</th>
           <th>기여도</th>
-        </tr>
-        {props.rankUserItems}
+        </thead>
+
+        <tbody>
+          {props.rankUserItems}
+        </tbody>
       </table>
     </div >
   )
