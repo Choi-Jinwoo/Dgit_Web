@@ -18,6 +18,15 @@
 
   .rankUserItem-name {
     font-weight: bold;
+    div {
+      display: flex;
+      align-items: center;
+
+      svg {
+        padding-left: 10px;
+      }
+
+    }
   }
 
   .rankUserItem-bio {
