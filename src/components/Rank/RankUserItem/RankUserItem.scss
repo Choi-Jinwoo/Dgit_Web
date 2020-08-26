@@ -1,4 +1,8 @@
 .rankUserItem {
+  p {
+    padding: 0;
+    margin: 0;
+  }
   font-size: 16px;
   color: #808080;
 
@@ -18,14 +22,21 @@
 
   .rankUserItem-name {
     font-weight: bold;
-    div {
-      display: flex;
-      align-items: center;
 
-      svg {
-        padding-left: 10px;
+    .rankUserItem-name-wrapper {
+      div {
+        display: flex;
+        align-items: center;
+
+        svg {
+          padding-left: 10px;
+        }
       }
-
+        span {
+          font-weight: lighter;
+          font-size: 14px;
+          color: #FA7268;
+        }
     }
   }
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import ContributionStore from './contribution/ContributionStore';
+import TotalTopStore from './totalTop/TotalTopStore';
 
 export const stores = {
   contributionStore: new ContributionStore(),
+  totalTopStore: new TotalTopStore(),
 }
 
 export const storesContext = React.createContext({

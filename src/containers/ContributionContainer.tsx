@@ -6,24 +6,24 @@ import RankUser from '../components/Rank/RankUser';
 
 const ContributionContainer = observer(() => {
   const { getTotalRank, totalRank } = stores.contributionStore;
+  const { getTotalTopStreak, totalTopStreak } = stores.totalTopStore;
 
-  const handleGetTotalRank = useCallback(async () => {
+  const handleStoreMethod = useCallback(async () => {
     try {
       await getTotalRank();
-    } catch (error) {
-      return error;
-    }
-  }, [getTotalRank]);
+      await getTotalTopStreak();
+    } catch (err) { }
+  }, [getTotalRank, getTotalTopStreak]);
 
   const rankUserItems: JSX.Element[] = totalRank.map((user, rank) => {
-    return (
+    return rank === 0 ?
+      <RankUserItem rank={rank + 1} streak={totalTopStreak} user={user} /> :
       <RankUserItem rank={rank + 1} user={user} />
-    )
-  })
+  });
 
   useEffect(() => {
-    handleGetTotalRank()
-  }, [handleGetTotalRank]);
+    handleStoreMethod()
+  }, [handleStoreMethod]);
 
   return (
     <RankUser rankUserItems={rankUserItems} />

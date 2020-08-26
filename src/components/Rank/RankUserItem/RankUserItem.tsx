@@ -7,6 +7,7 @@ import './RankUserItem.scss';
 interface IRankUserItemProps {
   rank: number;
   user: IUser;
+  streak?: number;
 }
 
 const getMedal = (rank: number): JSX.Element | null => {
@@ -29,9 +30,19 @@ const getMedal = (rank: number): JSX.Element | null => {
     <RiMedalLine size='24px' color={color} />)
 }
 
+const getStreak = (streak: number | undefined): JSX.Element | null => {
+  if (streak === undefined) {
+    return null;
+  }
+
+  return (
+    <span className="streakText">
+      {streak}일 유지 중 🔥
+    </span>
+  )
+}
+
 const RankUserItem = (props: IRankUserItemProps) => {
-
-
   return (
     <tr className='rankUserItem'>
       <td className='rankUserItem-rank'>
@@ -41,11 +52,14 @@ const RankUserItem = (props: IRankUserItemProps) => {
         <img src={props.user.userImage} alt="" />
       </td>
       <td className='rankUserItem-name'>
-        <div>
-          <p>
-            {props.user.name}
-          </p>
-          {getMedal(props.rank)}
+        <div className='rankUserItem-name-wrapper'>
+          <div>
+            <p>
+              {props.user.name}
+            </p>
+            {getMedal(props.rank)}
+          </div>
+          {getStreak(props.streak)}
         </div>
       </td>
       <td className='rankUserItem-userID'>{props.user.userID}</td>

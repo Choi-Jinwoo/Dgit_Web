@@ -1,9 +1,10 @@
 .rankUser {
-  width: 1400px;
+  min-width: 1400px;
   margin: 0 auto;
   font-family: 'Noto Sans KR', sans-serif;
 
   table {
+  margin: 0 auto;
     border-collapse: collapse;
     th, td {
       border-bottom: 1px solid #e2e2e2;
