@@ -42,9 +42,13 @@ const getStreak = (streak: number | undefined): JSX.Element | null => {
   )
 }
 
+const moveToGithub = (userID: string) => {
+  window.open()!.location.href = `https://github.com/${userID}`;
+}
+
 const RankUserItem = (props: IRankUserItemProps) => {
   return (
-    <tr className='rankUserItem'>
+    <tr className='rankUserItem' onClick={(e) => moveToGithub(props.user.userID)}>
       <td className='rankUserItem-rank'>
         {props.rank}
       </td>
@@ -65,7 +69,7 @@ const RankUserItem = (props: IRankUserItemProps) => {
       <td className='rankUserItem-userID'>{props.user.userID}</td>
       <td className='rankUserItem-toatlContributions'>{props.user.totalContributions}</td>
       <td className='rankUserItem-bio'>{!props.user.bio || !props.user.bio.length ? '-' : props.user.bio}</td>
-    </tr>
+    </tr >
   );
 }
 
