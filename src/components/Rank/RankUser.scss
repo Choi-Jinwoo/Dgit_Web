@@ -1,15 +1,20 @@
 .rankUser {
-  min-width: 1400px;
-  margin: 0 auto;
   font-family: 'Noto Sans KR', sans-serif;
 
   table {
-  margin: 0 auto;
+    margin: 0 auto;
     border-collapse: collapse;
+
     th, td {
+      padding: 10px 14px;
       border-bottom: 1px solid #e2e2e2;
       text-align: start;
-      padding: 10px 24px;
+    }
+
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 30px 14px;
     }
   }
 }

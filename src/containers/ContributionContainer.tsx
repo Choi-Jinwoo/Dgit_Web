@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import { stores } from '../stores';
 import RankUserItem from '../components/Rank/RankUserItem/RankUserItem';
 import RankUser from '../components/Rank/RankUser';
+import RankLoading from '../components/Rank/RankLoading/RankLoading';
 
 const ContributionContainer = observer(() => {
   const { getTotalRank, totalRank } = stores.contributionStore;
@@ -26,7 +27,9 @@ const ContributionContainer = observer(() => {
   }, [handleStoreMethod]);
 
   return (
-    <RankUser rankUserItems={rankUserItems} />
+    rankUserItems.length === 0 ?
+      <RankLoading /> :
+      <RankUser rankUserItems={rankUserItems} />
   );
 });
 

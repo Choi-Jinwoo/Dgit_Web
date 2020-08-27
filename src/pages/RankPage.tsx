@@ -1,9 +1,13 @@
 import React from 'react';
 import ContributionContainer from '../containers/ContributionContainer';
 
+import './RankPage.scss'
+
 const RankPage = () => {
   return (
-    <ContributionContainer />
+    <div className='contributionContainer'>
+      <ContributionContainer />
+    </div>
   );
 }
 

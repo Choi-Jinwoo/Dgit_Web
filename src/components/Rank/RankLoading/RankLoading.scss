@@ -1,0 +1,23 @@
+.rankLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      padding: 0 10px;
+      margin: 0;
+    }
+  }
+    span {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #808080;
+    }
+}

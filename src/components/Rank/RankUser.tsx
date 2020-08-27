@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import './RankUser.scss';
 
 interface IRankUserProps {
@@ -17,7 +16,7 @@ const RankUser = (props: IRankUserProps) => {
           <th>이름</th>
           <th>아이디</th>
           <th>기여도</th>
-          <th>설명</th>
+          <th>Bio</th>
         </thead>
 
         <tbody>
