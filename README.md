@@ -1,44 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+dgit은 대구소프트웨어고등학교의 Github기여도를 표시합니다
 
-## Available Scripts
+⚠️ 학생의 동기부여 목적으로 제작되었습니다.
 
-In the project directory, you can run:
+## 안내사항
+- 대구소프트웨어고등학교 재학생 혹은 졸업생 대상입니다  
+- 사용자가 본인의 ID를 등록하면 승인 후 표시합니다
+- 정확한 정보를 위해 신청시 이름을 입력해주세요
+- 비공개 저장소를 기여도로 표시하면 모든 기여도를 확인할 수 있습니다(Github설정)
+- 사용자 정보 수정 및 삭제는 해당 저장소의 이슈 혹은 직접 연락바랍니다
+- 개선사항, 오류는 해당 저장소의 이슈를 이용해주세요
 
-### `yarn start`
+## 구동 방식
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://user-images.githubusercontent.com/49791336/91555821-adcf3880-e96c-11ea-8879-777e4c4577d3.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Github과 하루 한번 동기화됩니다. 동기화된 데이터는 DB에 저장후 요청 시 저장된 데이터를 응답합니다
 
-### `yarn test`
+__사용자의 기여도, Bio등의 데이터는 1일이 지난후 적용됩니다.__
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 사용 기술
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 프론트엔드
+![image](https://user-images.githubusercontent.com/49791336/91555834-b293ec80-e96c-11ea-9c0d-5b11dcc7c7c7.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+ReactJS, Mobxs, TypeScript를 사용하여 프론트엔드를 제작하였습니다
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 백엔드
 
-### `yarn eject`
+![image](https://user-images.githubusercontent.com/49791336/91555775-985a0e80-e96c-11ea-97bb-0ff8dbb87ee4.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+NestJS, TypeScrip, TypeORM을 통하여 백엔드를 제작하였습니다.  
+PostgreSQL을 사용하였고 Docker와 Nginx를 통하여 배포하였습니다
