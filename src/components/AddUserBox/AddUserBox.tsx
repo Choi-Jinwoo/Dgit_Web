@@ -89,7 +89,7 @@ const AddUserBox = () => {
         <div style={{
           display: 'felx',
         }}>
-          <input type="text" placeholder='Github 아이디'
+          <input type="text" placeholder='Github 아이디 (example-user)'
             value={userID}
             onChange={(e) => setUserID(e.target.value)}
             style={{
