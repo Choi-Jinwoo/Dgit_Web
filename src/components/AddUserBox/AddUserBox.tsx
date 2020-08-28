@@ -72,7 +72,7 @@ const AddUserBox = () => {
 
   return (
     <div className='AddUserBox'>
-      <IoMdPersonAdd className='IoMPersonAdd' color='a0a0a0' onClick={openModal} />
+      <IoMdPersonAdd className='IoMPersonAdd' color='a0a0a0' size='18px' onClick={openModal} />
 
       <Modal
         isOpen={modalIsOpen}

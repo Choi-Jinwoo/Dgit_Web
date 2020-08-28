@@ -4,6 +4,12 @@
   .contributionContainer {
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 200px;
+
+    .utilBox {
+      display: flex;
+      justify-content: flex-end;
+    }
 
     @media only screen and (max-width: 1440px) {
       width: 95%; 
