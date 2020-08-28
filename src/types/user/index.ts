@@ -7,3 +7,8 @@ export interface IUser {
   isAllowed: boolean;
   createdAt: Date;
 }
+
+export interface IApplyUser {
+  userID: string;
+  name: string | null;
+}
