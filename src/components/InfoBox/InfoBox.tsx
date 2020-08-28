@@ -35,7 +35,7 @@ const InfoBox = () => {
 
   return (
     <div className='InfoBox'>
-      <AiFillInfoCircle className='AiFillInfoCircle' color='#ff6f61' size='18px' onClick={openModal} />
+      <AiFillInfoCircle className='AiFillInfoCircle' color='#4286f4' size='22px' onClick={openModal} />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
