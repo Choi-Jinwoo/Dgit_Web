@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Dgit_Web/static/css/main.3ba6ca84.chunk.css",
-    "main.js": "/Dgit_Web/static/js/main.c39d60de.chunk.js",
-    "main.js.map": "/Dgit_Web/static/js/main.c39d60de.chunk.js.map",
+    "main.js": "/Dgit_Web/static/js/main.fd32b10e.chunk.js",
+    "main.js.map": "/Dgit_Web/static/js/main.fd32b10e.chunk.js.map",
     "runtime-main.js": "/Dgit_Web/static/js/runtime-main.018278b1.js",
     "runtime-main.js.map": "/Dgit_Web/static/js/runtime-main.018278b1.js.map",
     "static/js/2.0540465c.chunk.js": "/Dgit_Web/static/js/2.0540465c.chunk.js",
     "static/js/2.0540465c.chunk.js.map": "/Dgit_Web/static/js/2.0540465c.chunk.js.map",
     "index.html": "/Dgit_Web/index.html",
-    "precache-manifest.408d77a9bd52a73ef55e990c19a0266d.js": "/Dgit_Web/precache-manifest.408d77a9bd52a73ef55e990c19a0266d.js",
+    "precache-manifest.b1ab27f73397e5530df7c631e92e1658.js": "/Dgit_Web/precache-manifest.b1ab27f73397e5530df7c631e92e1658.js",
     "service-worker.js": "/Dgit_Web/service-worker.js",
     "static/css/main.3ba6ca84.chunk.css.map": "/Dgit_Web/static/css/main.3ba6ca84.chunk.css.map",
     "static/js/2.0540465c.chunk.js.LICENSE.txt": "/Dgit_Web/static/js/2.0540465c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.018278b1.js",
     "static/js/2.0540465c.chunk.js",
     "static/css/main.3ba6ca84.chunk.css",
-    "static/js/main.c39d60de.chunk.js"
+    "static/js/main.fd32b10e.chunk.js"
   ]
 }
