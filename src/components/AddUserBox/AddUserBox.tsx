@@ -72,7 +72,7 @@ const AddUserBox = () => {
 
   return (
     <div className='AddUserBox'>
-      <IoMdPersonAdd className='IoMPersonAdd' color='a0a0a0' size='18px' onClick={openModal} />
+      <IoMdPersonAdd className='IoMPersonAdd' color='a0a0a0' size='22px' onClick={openModal} />
 
       <Modal
         isOpen={modalIsOpen}
@@ -89,7 +89,7 @@ const AddUserBox = () => {
         <div style={{
           display: 'felx',
         }}>
-          <input type="text" placeholder='Github 아이디'
+          <input type="text" placeholder='Github 아이디 (example-user)'
             value={userID}
             onChange={(e) => setUserID(e.target.value)}
             style={{
