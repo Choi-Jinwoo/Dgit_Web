@@ -6,6 +6,11 @@ class ContributionRepository {
     const data = await axios.get(`${SERVER}/contribution/total-rank`);
     return data;
   }
+
+  getWeekRank = async () => {
+    const data = await axios.get(`${SERVER}/contribution/week-rank`);
+    return data;
+  }
 }
 
 export default new ContributionRepository();

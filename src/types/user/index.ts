@@ -8,7 +8,13 @@ export interface IUser {
   createdAt: Date;
 }
 
+export interface IWeekRankUser extends IUser {
+  weekContributions: number;
+}
+
 export interface IApplyUser {
   userID: string;
   name: string | null;
 }
+
+
