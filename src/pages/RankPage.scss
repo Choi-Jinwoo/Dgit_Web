@@ -8,7 +8,22 @@
 
     .utilBox {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+
+      div{
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      button {
+        box-sizing: border-box;
+        padding: 5px 30px;
+        background-color: #e2e2e2;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        outline: none;
+      }
     }
 
     @media only screen and (max-width: 1440px) {
