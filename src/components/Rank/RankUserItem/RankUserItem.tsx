@@ -69,7 +69,9 @@ const RankUserItem = (props: IRankUserItemProps) => {
         </div>
       </td>
       <td className='rankUserItem-userID'>{props.user.userID}</td>
-      <td className='rankUserItem-toatlContributions'>{props.user.weekContributions || props.user.totalContributions}</td>
+      <td className='rankUserItem-toatlContributions'>{props.user.weekContributions !== undefined ?
+        props.user.weekContributions :
+        props.user.totalContributions}</td>
       <td className='rankUserItem-bio'>{!props.user.bio || !props.user.bio.length ? '-' : props.user.bio}</td>
     </tr >
   );
