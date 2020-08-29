@@ -99,6 +99,7 @@ const AddUserBox = () => {
               width: '100%',
               marginBottom: '10px',
               borderBottom: '1px solid #808080',
+              outline: 'none',
             }} />
           <input type="text" placeholder='이름'
             value={name}
@@ -110,6 +111,7 @@ const AddUserBox = () => {
               width: '100%',
               marginBottom: '10px',
               borderBottom: '1px solid #808080',
+              outline: 'none',
             }} />
         </div>
         <p style={{

@@ -1,21 +1,20 @@
 import { observable } from 'mobx';
 import { autobind } from 'core-decorators';
 import ContributionRepository from './ContributionRepository';
-import { IUser, IWeekRankUser } from '../../types/user';
+import { IUser } from '../../types/user';
 
 @autobind
 class ContributionStore {
-  @observable totalRank: IUser[] = [];
-  @observable weekRank: IWeekRankUser[] = [];
+  @observable userRank: IUser[] = [];
 
   async getTotalRank(): Promise<void> {
     const response = await ContributionRepository.getTotalRank();
-    this.totalRank = response.data.data.totalRank;
+    this.userRank = response.data.data.totalRank;
   }
 
   async getWeekRank(): Promise<void> {
     const response = await ContributionRepository.getWeekRank();
-    this.totalRank = response.data.data.weekRank;
+    this.userRank = response.data.data.weekRank;
   }
 }
 

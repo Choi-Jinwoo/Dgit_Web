@@ -3,11 +3,13 @@ import { IUser } from '../../../types/user';
 import { RiMedalLine } from 'react-icons/ri';
 
 import './RankUserItem.scss';
+import { RankType } from '../../../enum/RankType';
 
 interface IRankUserItemProps {
   rank: number;
   user: IUser;
   streak?: number;
+  rankType: RankType;
 }
 
 const getMedal = (rank: number): JSX.Element | null => {
@@ -63,11 +65,11 @@ const RankUserItem = (props: IRankUserItemProps) => {
             </p>
             {getMedal(props.rank)}
           </div>
-          {getStreak(props.streak)}
+          {props.rankType === RankType.TOTAL && getStreak(props.streak)}
         </div>
       </td>
       <td className='rankUserItem-userID'>{props.user.userID}</td>
-      <td className='rankUserItem-toatlContributions'>{props.user.totalContributions}</td>
+      <td className='rankUserItem-toatlContributions'>{props.user.weekContributions || props.user.totalContributions}</td>
       <td className='rankUserItem-bio'>{!props.user.bio || !props.user.bio.length ? '-' : props.user.bio}</td>
     </tr >
   );

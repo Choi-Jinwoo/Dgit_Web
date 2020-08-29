@@ -6,10 +6,7 @@ export interface IUser {
   bio: string | null;
   isAllowed: boolean;
   createdAt: Date;
-}
-
-export interface IWeekRankUser extends IUser {
-  weekContributions: number;
+  weekContributions?: number;
 }
 
 export interface IApplyUser {
