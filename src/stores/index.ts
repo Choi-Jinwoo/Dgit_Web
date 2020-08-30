@@ -2,10 +2,12 @@ import React from 'react';
 import ContributionStore from './contribution/ContributionStore';
 import TotalTopStore from './totalTop/TotalTopStore';
 import UserStore from './user/UserStore';
+import WeekTopStore from './weekTotal/WeekTopStore';
 
 export const stores = {
   contributionStore: new ContributionStore(),
   totalTopStore: new TotalTopStore(),
+  weekTopStore: new WeekTopStore(),
   userStore: new UserStore(),
 }
 
