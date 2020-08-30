@@ -1,0 +1,34 @@
+.historyUserItem {
+  font-size: 14px;
+  color: #808080;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fafafa;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .historyUserItem-img {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+
+  .historyUserItem-weekContributions {
+    font-weight: bold;
+  }
+
+  .historyUserItem-name {
+    font-weight: bold;
+  }
+
+  .historyUserItem-bio, .historyUserItem-userID{
+    color: #a0a0a0;
+  }
+}
