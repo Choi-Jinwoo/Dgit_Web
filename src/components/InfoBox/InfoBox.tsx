@@ -66,13 +66,10 @@ const InfoBox = () => {
           }}>비공개 저장소를 기여도로 표시하면 모든 기여도를 확인할 수 있습니다(Github설정)</li>
           <li style={{
             padding: '10px',
-          }}>주간 기여도는 일요일 ~ 토요일의 기여도입니다</li>
+          }}>하루 2회 동기화 됩니다(00:00, 12:00)</li>
           <li style={{
             padding: '10px',
           }}>주간 기여도는 일요일 ~ 토요일의 기여도입니다</li>
-          <li style={{
-            padding: '10px',
-          }}>정보는 하루 2번 동기화 됩니다</li>
           <li style={{
             padding: '10px',
           }}>사용자 정보 수정 및 삭제는 <a href="https://github.com/Choi-Jinwoo">제작자</a>로 요청해주세요</li>
