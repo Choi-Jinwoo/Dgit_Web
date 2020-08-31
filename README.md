@@ -19,7 +19,7 @@ Github과 하루 한번 동기화됩니다. 동기화된 데이터는 DB에 저�
 > 변경  
 > __사용자의 기여도, Bio등의 데이터는 1일이 지난후 적용됩니다.__
 
-__사용자의 기여도, Bio등의 데이터는 12시 24시에 동기화 됩니다__
+__사용자의 기여도, Bio, 주간 순위등의 데이터는 `8시`, `10시`, `12시`, `14`, `16시`, `18시`, `20시`에 동기화 됩니다__
 
 
 ## 사용 기술
@@ -33,5 +33,4 @@ ReactJS, Mobxs, TypeScript를 사용하여 프론트엔드를 제작하였습니
 
 ![image](https://user-images.githubusercontent.com/49791336/91555775-985a0e80-e96c-11ea-97bb-0ff8dbb87ee4.png)
 
-NestJS, TypeScrip, TypeORM을 통하여 백엔드를 제작하였습니다.  
-PostgreSQL을 사용하였고 Docker와 Nginx를 통하여 배포하였습니다
+NestJS, TypeScrip, TypeORM을 통하여 백엔드를 제작하였습니다. PostgreSQL을 사용하였고 Docker와 Nginx를 통하여 배포하였습니다
