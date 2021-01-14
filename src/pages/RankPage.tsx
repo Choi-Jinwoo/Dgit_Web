@@ -7,6 +7,7 @@ import InfoBox from '../components/InfoBox/InfoBox';
 import './RankPage.scss'
 import { RankType } from '../enum/RankType';
 import WeekRankHistoryContainer from '../containers/WeekRankHistoryContainer';
+import RecommendFeature from '../components/PopUp/RecommendFeature';
 
 const RankPage = () => {
   const [rankType, setRankType] = React.useState(RankType.TOTAL);
@@ -30,6 +31,7 @@ const RankPage = () => {
           <div>
             <AddUserBox />
             <InfoBox />
+            <RecommendFeature />
           </div>
         </div>
         {rankType === RankType.WEEK_HISTORY ?
